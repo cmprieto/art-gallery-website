@@ -1,0 +1,168 @@
+/*TABLET*/
+@media only screen and (min-width: 705px) and (max-width: 1400px) {
+  .grid-container {
+    max-width: 768px;
+    height: 2287px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "cabecera cabecera "
+      "cabecera cabecera "
+      "principal principal "
+      "principal principal "
+      "principal principal "
+      "footer footer ";
+  }
+  /*    CABECERA TABLET */
+  .cabecera--container {
+    &--black {
+      display: none;
+    }
+    &--white {
+      display: none;
+    }
+    &--tablet {
+      display: block;
+      position: absolute;
+      width: 437px;
+      height: 700px;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--title {
+      width: 339px;
+      height: 130px;
+      top: 145px;
+      left: 389px;
+      overflow: hidden;
+      & > h1 {
+        font-family: "Big Shoulders Display", sans-serif;
+        font-size: 70px;
+        line-height: 60px;
+        font-weight: 800;
+        font-style: normal;
+        font-optical-sizing: auto;
+        color: black;
+      }
+    }
+    &--description {
+      top: 300px;
+      left: 389px;
+      width: 339px;
+      height: 112px;
+      & > p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &--button {
+      top: 485px;
+      left: 389px;
+    }
+  }
+  /*    PRINCIPAL TABLET */
+  .principal--container {
+    width: 689px;
+    height: 1131px;
+    &--text {
+      width: 223px;
+      height: 299px;
+      top: 50px;
+      left: 39px;
+
+      & > p {
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &--fotogaleria,
+    &--fotomovil {
+      visibility: hidden;
+    }
+    &--fotogaleria2,
+    &--fotomovil2 {
+      visibility: hidden;
+    }
+    &--fotogaleria3,
+    &--fotomovil3 {
+      visibility: hidden;
+    }
+
+    &--fototablet {
+      visibility: visible;
+      position: absolute;
+      width: 398px;
+      height: 400px;
+      left: 330px;
+      top: 0px;
+    }
+    &--fototablet2 {
+      visibility: visible;
+      position: absolute;
+      width: 398px;
+      height: 720px;
+      left: 39px;
+      top: 405px;
+    }
+    &--fototablet3 {
+      visibility: visible;
+      position: absolute;
+      left: 448px;
+      top: 405px;
+      width: 280px;
+      height: 313px;
+    }
+    &--container {
+      left: 448px;
+      top: 729px;
+      width: 280px;
+      height: 396px;
+      justify-content: space-around;
+      & > h2 {
+        padding: 60px 25px 0px 25px;
+      }
+      & > p {
+        padding: 0px 25px 60px 25px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+  /*    FOOTER TABLET */
+  .footer {
+    height: 216px;
+    width: 768px;
+    &--container {
+      width: 689px;
+      height: 104px;
+      left: 39px;
+      top: 60px;
+      &--information {
+        width: 520px;
+        height: 104px;
+        &--title {
+          & > h3 {
+            font-family: "Big Shoulders Display", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-optical-sizing: auto;
+            font-size: 22px;
+            line-height: 22px;
+          }
+          & > p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

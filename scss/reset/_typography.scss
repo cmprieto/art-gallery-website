@@ -1,0 +1,52 @@
+// <uniquifier>: Use a unique and descriptive class name
+/* TIPOGRAFIAS */
+.big-shoulders {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-optical-sizing: auto;
+
+  &--heading--xl {
+    @extend .big-shoulders;
+    font-size: 96px;
+    line-height: 88px;
+    background-image: linear-gradient(to right, white 55%, black 45%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.065em;
+  }
+  &--heading--l {
+    @extend .big-shoulders;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  &--heading--m {
+    @extend .big-shoulders;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  &--heading--s {
+    @extend .big-shoulders;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+  &--body--m {
+    @extend .outfit;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  &--body--s {
+    @extend .outfit;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

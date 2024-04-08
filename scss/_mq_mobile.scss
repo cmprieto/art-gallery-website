@@ -1,0 +1,185 @@
+/*MOVIL*/
+@media only screen and (max-width: 704px) {
+  .grid-container {
+    max-width: 375px;
+    height: 2811px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cabecera"
+      "principal"
+      "principal"
+      "principal"
+      "principal"
+      "footer";
+  }
+  /*    CABECERA MOVIL */
+  .cabecera {
+    height: 630px;
+    width: 375px;
+    &--container {
+      &--black {
+        display: none;
+      }
+      &--white {
+        display: none;
+      }
+      &--tablet {
+        visibility: hidden;
+      }
+      &--mobile {
+        display: block;
+        position: absolute;
+        height: 240px;
+        width: 375px;
+      }
+      &--title {
+        width: 343px;
+        height: 110px;
+        position: absolute;
+        top: 260px;
+        left: 15px;
+        overflow: hidden;
+        & > h1 {
+          font-family: "Big Shoulders Display", sans-serif;
+          font-size: 60px;
+          line-height: 55px;
+          font-weight: 800;
+          font-style: normal;
+          font-optical-sizing: auto;
+          color: black;
+        }
+      }
+      &--description {
+        top: 385px;
+        left: 15px;
+        width: 343px;
+        height: 112px;
+        & > p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      &--button {
+        top: 550px;
+        left: 15px;
+      }
+    }
+  }
+
+  /*    PRINCIPAL MOVIL */
+
+  .principal--container {
+    margin: auto;
+    width: 343px;
+    height: 1935px;
+    &--fotogaleria {
+      visibility: hidden;
+    }
+    &--fotogaleria2 {
+      visibility: hidden;
+    }
+    &--fotogaleria3 {
+      visibility: hidden;
+    }
+
+    &--fotomovil {
+      visibility: visible;
+      position: absolute;
+      top: 100px;
+      left: 0px;
+    }
+    &--fotomovil2 {
+      visibility: visible;
+      position: absolute;
+      top: 700px;
+      left: 0px;
+    }
+    &--fotomovil3 {
+      visibility: visible;
+      position: absolute;
+      top: 1200px;
+      left: 0px;
+    }
+    &--text {
+      visibility: visible;
+      position: absolute;
+      top: 450px;
+      left: 0px;
+      height: 223px;
+      width: 343px;
+
+      & > h2 {
+        font-family: "Big Shoulders Display", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-size: 50px;
+        line-height: 45px;
+      }
+      & > p {
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &--container {
+      left: 0px;
+      top: 1459px;
+      width: 343px;
+      height: 293px;
+      padding: 0px;
+      & > h2 {
+        padding: 30px;
+        font-family: "Big Shoulders Display", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-size: 50px;
+        line-height: 45px;
+      }
+      & > p {
+        padding: 30px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+  /*    FOOTER MOVIL */
+  .footer {
+    height: 336px;
+    width: 375px;
+    &--container {
+      width: 311px;
+      height: 240px;
+      left: 32px;
+      top: 53px;
+      &--information {
+        width: 311px;
+        height: 200px;
+        flex-direction: column;
+        &--text {
+          width: 311px;
+          height: 104px;
+          color: $color-white;
+        }
+      }
+      &--rrss {
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        top: 230px;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

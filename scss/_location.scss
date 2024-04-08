@@ -1,0 +1,103 @@
+.tablet,
+.mobile {
+  display: none;
+}
+.grid-container-location {
+  &--map {
+    grid-area: map;
+    width: 1440px;
+    height: 600px;
+    position: relative;
+
+    &--button {
+      position: absolute;
+      top: 0px;
+      left: 156px;
+      width: 260px;
+      height: 72px;
+
+      & > a {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+      }
+      &:hover {
+        .button--home {
+          background-color: $color-gold;
+          &--arrow {
+            background-color: $color-almostblack;
+          }
+        }
+      }
+    }
+
+    &--tablet {
+      display: none;
+    }
+  }
+
+  &--textmap {
+    grid-area: textmap;
+    background-color: $color-almostblack;
+    width: 1440px;
+    height: 548px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      width: 1110px;
+      height: 316px;
+      &--title {
+        width: 350px;
+        height: 140px;
+        & > h1 {
+          color: white;
+        }
+      }
+      &--address {
+        width: 540px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        & > h4 {
+          color: $color-gold;
+        }
+        & > p {
+          color: white;
+        }
+      }
+    }
+  }
+
+  /* FOOTER-LOCATION */
+  .footer {
+    grid-area: footer;
+    background-color: $color-gold;
+    &--container {
+      &--information {
+        &--title {
+          & > h3 {
+            color: black;
+          }
+        }
+        &--text {
+          & > p {
+            color: black;
+          }
+        }
+      }
+
+      &--rrss {
+        & > svg {
+          fill: $color-almostblack;
+        }
+        & > svg:hover {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+}

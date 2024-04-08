@@ -1,0 +1,82 @@
+/*TABLET*/
+@media only screen and (min-width: 705px) and (max-width: 1400px) {
+  .desktop,
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .grid-container-location {
+    box-sizing: border-box;
+    margin: auto;
+    width: 768px;
+    height: 1252px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-areas:
+      "map map "
+      "textmap textmap "
+      "footer footer ";
+    &--map {
+      width: 768px;
+      height: 600px;
+      position: relative;
+      &--desktop {
+        visibility: hidden;
+      }
+      &--tablet {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 768px;
+        height: 600px;
+      }
+      &--button {
+        display: block;
+        position: absolute;
+        z-index: 99;
+      }
+    }
+    .button--map {
+      width: 264px;
+      height: 72px;
+      z-index: 99;
+    }
+
+    &--textmap {
+      width: 768px;
+      height: 438px;
+      &--container {
+        width: 689px;
+        height: 268px;
+        &--title {
+          width: 220px;
+          height: 150px;
+          & > h1 {
+            font-size: 55px;
+          }
+        }
+        &--address {
+          justify-content: space-around;
+          width: 450px;
+          & > p {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-optical-sizing: auto;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .footer {
+      width: 768px;
+      height: 216px;
+    }
+  }
+}

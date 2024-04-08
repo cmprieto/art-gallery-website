@@ -1,0 +1,22 @@
+//reset
+@import "./reset/vars";
+@import "./reset/typography";
+@import "./reset/reset";
+@import "button";
+@import "./reset/mixin";
+
+//css grid
+@import "./reset/layout";
+
+//estructura
+@import "location";
+@import "cabecera";
+@import "principal";
+@import "footer";
+
+//media queries
+
+@import "mq_tablet";
+@import "mq_tablet_location";
+@import "mq_mobile";
+@import "mq_mobile_location";

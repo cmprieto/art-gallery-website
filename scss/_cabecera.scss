@@ -1,0 +1,63 @@
+.cabecera {
+  grid-area: cabecera;
+  &--container {
+    display: flex;
+    max-width: 1275px;
+    height: 800px;
+    float: left;
+    position: relative;
+    &--black {
+      background-color: $color-almostblack;
+      width: 450px;
+      height: 799px;
+    }
+    &--white {
+      background-color: $color-white;
+      width: 540px;
+      height: 799px;
+    }
+    &--tablet,
+    &--mobile {
+      display: none;
+    }
+    &--title {
+      background-color: transparent;
+      position: absolute;
+      width: 514px;
+      height: 176px;
+      top: 189px;
+      left: 165px;
+
+      & > h1 {
+        line-break: strict;
+      }
+    }
+    &--description {
+      position: absolute;
+      top: 190px;
+      left: 925px;
+      width: 350px;
+      height: 160px;
+    }
+
+    &--button {
+      position: absolute;
+      top: 414px;
+      left: 925px;
+      width: 260px;
+      height: 72px;
+      & > a {
+        display: flex;
+        text-decoration: none;
+      }
+      &:hover {
+        .button--location {
+          background-color: $color-gold;
+          &--arrow {
+            background-color: $color-almostblack;
+          }
+        }
+      }
+    }
+  }
+}

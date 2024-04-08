@@ -1,0 +1,63 @@
+/*MOVIL*/
+@media only screen and (max-width: 704px) {
+  .desktop,
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .grid-container-location {
+    max-width: 375px;
+    height: 1379px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "map "
+      "textmap  "
+      "footer  ";
+    &--map {
+      grid-area: map;
+      max-width: 375px;
+      height: 550px;
+      &--button {
+        top: 0px;
+        left: 0px;
+      }
+    }
+    &--textmap {
+      grid-area: textmap;
+      max-width: 375px;
+      height: 493px;
+      &--container {
+        flex-direction: column;
+        width: 375px;
+        height: 493px;
+        align-items: center;
+        justify-content: space-around;
+        &--title {
+          width: 92%;
+          height: 120px;
+        }
+        &--address {
+          width: 343px;
+          height: 280px;
+          & > p {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-optical-sizing: auto;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    grid-area: footer;
+    width: 375px;
+    height: 336px;
+  }
+}
